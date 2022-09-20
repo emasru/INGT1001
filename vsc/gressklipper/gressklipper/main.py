@@ -52,6 +52,7 @@ while True:
             vehicle.turn(55)
 
     elif not onState: # Vi er i av-modus
+        # Holder oss inn i loop med ingenting helt til på-knappen blir trykket
         while not onOffButton.pressed():
             continue
         onState = not onState # Skrur på
